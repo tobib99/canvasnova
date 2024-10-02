@@ -358,7 +358,7 @@ export default function WhitewallArtworkCustomizationV7() {
         </CardHeader>
         <CardContent>
           <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden">
-            <Image src={artworkUrl} alt="Artwork preview" width={600} height={400} className="object-contain" />
+            <Image src={artworkUrl} alt="Artwork preview" width={600} height={400} className="object-contain" unoptimized />
           </div>
         </CardContent>
       </Card>
