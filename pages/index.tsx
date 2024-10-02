@@ -114,7 +114,7 @@ const shippingOptions = [
   { id: 'overnight', name: 'Overnight Shipping', price: 39.95, description: 'Next-day delivery for urgent orders.' },
 ]
 
-export default function WhitewallArtworkCustomizationV7Component() {
+export default function WhitewallArtworkCustomizationV7() {
   const searchParams = useSearchParams()
   const artworkUrl = searchParams.get('artworkUrl') || '/placeholder.svg?height=400&width=600'
 
@@ -358,7 +358,7 @@ export default function WhitewallArtworkCustomizationV7Component() {
         </CardHeader>
         <CardContent>
           <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden">
-            <Image src={artworkUrl} alt="Artwork preview" width={600} height={400} className="object-contain" unoptimized />
+            <Image src={artworkUrl} alt="Artwork preview" width={600} height={400} className="object-contain" />
           </div>
         </CardContent>
       </Card>
